@@ -231,8 +231,7 @@ header {
     position: relative;
     overflow: hidden;
 }
-..menu-grid-cover img {
-    position: absolute;
+.menu-grid-cover img {
     left: 50%;
     top: 50%;
     transform: translate(-50% -50%);
