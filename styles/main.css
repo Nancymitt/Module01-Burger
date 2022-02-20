@@ -149,13 +149,12 @@ header {
     background-position: center center;
     padding: 100px 100px;
     color: #FFFFFF;
-    margin-bottom: 67px;
+    margin-bottom: 66px;
 }
 .banner-title {
     font-size: 60px;
     font-weight: 900;
     color: #FFFFFF;
-    margin-top: 0;
     margin: 0;
 }
 .banner-title span {
@@ -169,7 +168,7 @@ header {
     border-radius: 14px;
     max-width: 95px;
     text-align: center;
-    padding: 4px 0;
+    padding: 2px 0 5px 0;
     margin-bottom: 7px;
 }
 .banner-text {
@@ -193,7 +192,6 @@ header {
     display: inline-block;
     padding: 20px 25px 19px;
     cursor: pointer;
-    margin-top: 1px;
 }
 .menu-header {
     display: flex;
@@ -219,12 +217,13 @@ header {
     background-size: 12.79px 7.75px;
     background-repeat: no-repeat;
     background-position: 89% center;
+    margin-top: 4px;
 }
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
-    margin-bottom: 65px;
+    margin-bottom: 66px;
 }
 .menu-grid-cover {
     width: 100%;
