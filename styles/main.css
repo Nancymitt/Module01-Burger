@@ -156,7 +156,7 @@ header {
     font-weight: 900;
     color: #FFFFFF;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin: 0;
 }
 .banner-title span {
     display: block;
@@ -191,7 +191,7 @@ header {
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    padding: 19px 26px;
+    padding: 20px 25px 19px;
     cursor: pointer;
     margin-top: 1px;
 }
@@ -224,12 +224,14 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
+    margin-bottom: 65px;
 }
 .menu-grid-cover {
     width: 100%;
     height: 430px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 23px;
 }
 .menu-grid-cover img {
     position: absolute;
@@ -244,65 +246,46 @@ header {
     text-align: center;
 }
 .menu-grid-title {
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 30px;
-    line-height: 38px;
     color: #1B2A49;
-    margin: 20px 30px;
-    margin-bottom: 6px;
+    margin: 0;
 }
 .menu-grid-price {
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     color: #979797;
-    margin: 0;
-    margin-bottom: 19px;
+    margin-top: 7px;
+    margin-bottom: 18px;
 }
 .menu-grid-btn {
     display: flex;
     cursor: pointer;
-    background: #FBB731;
+    background-color: #FBB731;
     border-radius: 5px;
     border: none;
-    margin: 0 auto;
+    margin: 1px auto;
     padding: 10px 30px;
-    gap: 10px;
+    gap: 9px;
     align-items: center;
-    max-width: 152px;
+    justify-content: center;
 }
 .menu-grid-icon {
+    background-image: url(../images/cart-menu.svg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    width: 25px;
-    height: 18px;
     display: block;
+    width: 18px;
+    height: 18px;
 }
 
 .menu-grid-text {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 18px;
-    text-align: center;
     text-transform: uppercase;
     color: #1E2F40;
-    margin-right: 10px;
+    margin-right: 7px;
 }
-.extra-menu-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.extra-menu-title {
-    font-family: 'Nunito Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 56px;
-    color: #1B2A49;
-    margin-top: 100px;
-    margin-bottom: 34px;
-}
+
