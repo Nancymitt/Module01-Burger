@@ -17,7 +17,12 @@ header {
     justify-content: space-between;
     padding-top: 26px;
     padding-bottom: 25px;
-
+}
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
 }
 .header-logo {
     display: block;
@@ -149,7 +154,7 @@ header {
     background-position: center center;
     padding: 100px 100px;
     color: #FFFFFF;
-    margin-bottom: 66px;
+    margin-bottom: 67px;
 }
 .banner-title {
     font-size: 60px;
@@ -180,7 +185,7 @@ header {
     color: #FAF9F9;
 }
 .banner-link {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -190,8 +195,13 @@ header {
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    padding: 20px 25px 19px;
+    padding: 17px 24px 19px;
     cursor: pointer;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-header {
     display: flex;
@@ -270,6 +280,10 @@ header {
     align-items: center;
     justify-content: center;
 }
+button.menu-grid-btn:hover {
+background-color: #F37335;
+
+}
 .menu-grid-icon {
     background-image: url(../images/cart-menu.svg);
     background-size: cover;
@@ -315,7 +329,7 @@ header {
     margin-bottom: 10px;
     margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -323,10 +337,13 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list a:hover {
+    color: #FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -334,14 +351,19 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
-    font-size: 20px;
-    color: #FBB731;
+.footer-list-tel {
     margin-top: 0;
 }
-.footer-tel li {
+.footer-list-tel li {
     margin-bottom: 12px;
+}
+.footer-list-tel a {
+    font-size: 20px;
     font-weight: 900;
+    color: #FBB731;
+}
+.footer-list-tel a:hover {
+    color: #DEDEDE;
 }
 .footer-list {
     padding-left: 0;
