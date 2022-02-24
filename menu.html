@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="headerTop">
         <div class="container">
             <div class="header">
                 <div class="header-item">
@@ -23,7 +23,7 @@
                             <li><a href="index.html">Главная</a></li>
                             <li><a href="menu.html" class="active">Меню</a></li>
                             <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#Contacts">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -85,7 +85,7 @@
                         <div class="menu-grid-cover">
                             <img src="images/menu/01.jpg" alt="Острый Бургер">
                         </div>
-                        <p class="menu-grid-title">Острый бургер</p>
+                        <p class="menu-grid-title">Острый Бургер</p>
                         <p class="menu-grid-price">$26</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
@@ -105,9 +105,9 @@
                     </div>
                     <div class="menu-grid-item">
                         <div class="menu-grid-cover">
-                            <img src="images/menu/03.jpg" alt="Бурег Гигант">
+                            <img src="images/menu/03.jpg" alt="Бургер Гигант">
                         </div>
-                        <p class="menu-grid-title">Бурег Гигант</p>
+                        <p class="menu-grid-title">Бургер Гигант</p>
                         <p class="menu-grid-price">$37</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
@@ -140,7 +140,7 @@
                         <div class="menu-grid-cover">
                             <img src="images/menu/06.jpg" alt="Тройной Бургер">
                         </div>
-                        <p class="menu-grid-title">Тройной бурегр</p>
+                        <p class="menu-grid-title">Тройной Бургер</p>
                         <p class="menu-grid-price">$7</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
@@ -199,7 +199,7 @@
         </section>
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer" id="Contacts">
         <div class="container">
             <div class="footer-box">
                 <div class="footer-item">
@@ -208,10 +208,10 @@
                 <div class="footer-item">
                     <h2>основные ссылки</h2>
                     <ul class="footer-list">
-                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="#menuBurger">Меню</a></li>
                         <li><a href="#">Заказ и Доставка</a></li>
                         <li><a href="#">Методы оплаты</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#Contacts">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -242,6 +242,56 @@
             
         </div>
     </footer>
-    
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <script>
+
+        // Smooth Scroll
+
+        const links = document.querySelectorAll(".banner-link");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        // Button Up
+        
+        window.onscroll = function(){scrollFunction()};
+
+        const upbuttons = document.querySelectorAll(".button-up");
+
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
+
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button-up hidden';
+            }
+        }
+
+
+
+    </script>
+
 </body>
 </html>
