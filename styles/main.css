@@ -419,16 +419,14 @@ background-color: #F37335;
 
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
-    
+    padding-left: 13px;
+    padding-right: 13px;
 }
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-left: 13px;
-    padding-right: 13px;
-
 }
 .content {
     color: #FAF9F9;
@@ -609,6 +607,11 @@ background-color: #F37335;
 
 /* Responsive  */
 
+@media (max-width: 1535px) {
+    body {
+        overflow-x: hidden;
+    }
+}
 @media (max-width: 1112px) {
 
 	.main img {
@@ -704,9 +707,9 @@ background-color: #F37335;
         margin-bottom: 20px;
     }
     .footer {
-        margin-top: 137px;
-        padding-top: 61px;
-        padding-bottom: 65px;   
+        margin-top: 45px;
+    padding-top: 61px;
+    padding-bottom: 45px;  
     }
     .visual-bg {
 		margin-right: 28px;
@@ -764,16 +767,16 @@ background-color: #F37335;
 	}
 	.promo {
 		padding-top: 107px;
-		padding-bottom: 92px;
+		padding-bottom: 25px;
 	}
 	.wrapper {
 	    max-width: 738px;
 	}
 	.promo-left {
-	    padding: 44px 30px;
+	    padding: 40px 30px;
 	}
 	.promo-right {
-	    padding: 58px 31px;
+	    padding: 45px 31px;
 	}
 	.promo-right .promo-description {
 		margin-bottom: 15px;
@@ -828,13 +831,10 @@ background-color: #F37335;
 	}
 }
 @media (max-width: 668px) {
-    .content-text {
-        max-width: 50%;
-    }
     .main img {
         width: 340px;
-        left: 282px;
-        top: -312px;
+        left: 251px;
+        top: -277px;
     }
 }
 @media (max-width: 567px) {
@@ -992,8 +992,8 @@ background-color: #F37335;
     }
     .main img {
         width: 310px;
-        left: 206px;
-        top: -273px;
+        left: 210px;
+        top: -279px;
     }
 }
 @media (max-width: 429px) {
@@ -1007,13 +1007,12 @@ background-color: #F37335;
 	}
     .main {
         width: 100%;
+        padding-bottom: 50px;
     }
     .main img {
-        position: absolute;
         width: 298px;
-        height: 297.07px;
-        left: 128px;
-        top: -218px;
+        left: 107px;
+        top: -200px;
         }
     .content-title span {
         font-size: 14px;
@@ -1029,6 +1028,14 @@ background-color: #F37335;
     .footer-box {
         flex-direction: column;
         gap: 16px;
+    }
+    .main img {
+        width: 230px;
+        left: 95px;
+        top: -139px;
+    }
+    .content-text {
+        padding-right: 88px;
     }
 }
 @media (max-width: 360px) {
@@ -1070,10 +1077,20 @@ background-color: #F37335;
         margin-top: 42px;
         padding-bottom: 49px;
     }
-      
+    .main img {
+        left: 91px;
+        top: -143px;
+    }
 }
 @media (max-width: 321px) {
     .banner-box {
         background-position: 25% center;
+    }
+    .main img {
+        left: 33px;
+        top: -129px;
+    }
+    .content-text {
+        padding-right: 0px;
     }
 }
