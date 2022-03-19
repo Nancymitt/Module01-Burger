@@ -232,6 +232,7 @@ header {
     background-size: 12.79px 7.75px;
     background-repeat: no-repeat;
     background-position: 89% center;
+    background-color: #fff;
     padding: 13px 30px;
 }
 .menu-grid {
@@ -317,19 +318,16 @@ background-color: #F37335;
 .footer-box {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
     height: 56px;
 }
-.footer-item {
-    flex: 0 0 auto;
-}
 .footer-item h2 {
     font-size: 20px;
     font-weight: 800;
-    line-height: 38px;
+    line-height: 1.5;
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 0px;
@@ -733,6 +731,13 @@ background-color: #F37335;
 }
 @media (max-width: 783px) {
 
+    .second-container {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    #hot-dog {
+        padding-right: 15px;
+    }
 	.content {
 		flex: 0 0 411px;
 	    padding-top: 43px;
@@ -784,6 +789,11 @@ background-color: #F37335;
 	.sale {
 		margin-bottom: 8px;
 	}
+}
+@media (min-width: 769px) {
+    .body {
+        max-width: 768px;
+    }
 }
 @media (min-width: 766px) {
     .header-burger {
@@ -941,7 +951,7 @@ background-color: #F37335;
         flex: 0 0 38vw;
     }
     .footer {
-        padding-top: 60px;
+        padding-top: 46px;
         padding-bottom: 60px;
         margin-top: 28px;
     }
@@ -953,8 +963,8 @@ background-color: #F37335;
         letter-spacing: 1.5px;
     }
     .footer-list-tel {
-        margin-top: 16px;
-        text-align: center;
+        margin-top: 0px;
+        text-align: right;
         margin-right: 8px;
         letter-spacing: 0.2px;
         grid-area: tel;
@@ -968,12 +978,16 @@ background-color: #F37335;
         grid-template-columns: 30% 70%;
         grid-template-areas: "logo tel" "links links" "info info";
         gap: 0;
+        
+    }
+    .footer-list.footer-list-tel {
+        gap: 0;
     }
     .footer-tel {
         grid-area: tel;
         display: block;
         text-align: right;
-        margin-bottom: 12px;
+        padding-top: 10px;
     }
     .footer-item:nth-child(1) {
         grid-area: logo;
@@ -984,9 +998,6 @@ background-color: #F37335;
     .footer-item:nth-child(3) {
         grid-area: info;
     }    
-    .footer {
-        padding-top: 45px;
-    }
     .banner-text {
         max-width: 248px;
     }
@@ -1074,7 +1085,7 @@ background-color: #F37335;
         font-size: 13px;
     }
     .footer {
-        margin-top: 42px;
+        margin-top: 55px;
         padding-bottom: 49px;
     }
     .main img {
