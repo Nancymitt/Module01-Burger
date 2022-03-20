@@ -43,6 +43,7 @@ header {
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+    transition: 0.3s;
 }
 .header-nav a:hover{
     color: #FFC725;
@@ -606,8 +607,15 @@ background-color: #F37335;
 /* Responsive  */
 
 @media (max-width: 1535px) {
-    body {
+    html {
+        width: 100%;
+        max-width: 100%;
         overflow-x: hidden;
+    }
+    body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     }
 }
 @media (max-width: 1112px) {
@@ -706,8 +714,8 @@ background-color: #F37335;
     }
     .footer {
         margin-top: 45px;
-    padding-top: 61px;
-    padding-bottom: 45px;  
+        padding-top: 61px;
+        padding-bottom: 49px;  
     }
     .visual-bg {
 		margin-right: 28px;
@@ -1050,6 +1058,7 @@ background-color: #F37335;
     }
 }
 @media (max-width: 360px) {
+    
     .menu-header {
         margin-bottom: 30px;
     }
@@ -1092,16 +1101,30 @@ background-color: #F37335;
         left: 91px;
         top: -143px;
     }
+    .promo .wrapper {        
+        width: 100%;
+    }
 }
 @media (max-width: 321px) {
     .banner-box {
         background-position: 25% center;
     }
     .main img {
-        left: 33px;
+        left: 85px;
         top: -129px;
     }
     .content-text {
         padding-right: 0px;
+    }
+   
+    .promo {        
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .promo-left {
+        margin-bottom: 20px;
+    }
+    .footer {
+        margin-top: 28px;
     }
 }
